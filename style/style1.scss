@@ -1,0 +1,311 @@
+$color-green-light: #3dc9b3;
+$color-green-dark: #309383;
+$color-grey-text: #8c9398;
+$color-grey-light: #f3f5f8;
+$color-grey-dark: #353535;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Varela Round", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: $color-grey-dark;
+}
+h2 {
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1em;
+  color: $color-grey-text;
+}
+section {
+  min-height: 40vh;
+}
+
+////////////////   section-first
+.section-first {
+  position: relative;
+  height: 100vh;
+  background: url("../img/hero-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  .container {
+    height: 100%;
+  }
+  i {
+    font-size: 2em;
+    position: absolute;
+    top: 10%;
+    right: 20%;
+    color: black;
+  }
+  h1 {
+    font-size: 3em;
+    color: $color-grey-dark;
+    letter-spacing: 12px;
+    margin: 10px;
+    span {
+      color: $color-grey-text;
+    }
+  }
+  .btn {
+    // background: rgba(61, 201, 179, 1);
+    background: $color-green-light;
+    padding: 20px 40px;
+    margin: 60px 0 0;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    box-shadow: 0px 3px 0px 0px $color-green-dark;
+    font-weight: bold;
+    transition: all 0.5s;
+  }
+  .btn:hover,
+  .btn:focus {
+    background: $color-green-light;
+    opacity: 0.9;
+  }
+}
+
+///////section-second
+.section-second {
+  background: $color-grey-light;
+  height: 50vh;
+  span {
+    color: $color-grey-dark;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .section-second {
+    height: 100vh;
+  }
+}
+
+///////section-third LOVE WHAT YOU DO, AND YOU'LL DO IT WELL
+.section-third {
+  h3 {
+    font-size: 1.2em;
+    margin: 0.8em 0;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: $color-green-light;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    // border-bottom: solid 3px #3dc9b3;
+  }
+  .img-circle-third {
+    max-width: 100px;
+    background: rgba(61, 201, 179, 0.6);
+    // background: $color-green-light;
+    border-radius: 50%;
+    // filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(330deg) brightness(106%) contrast(101%);
+  }
+}
+///////section-fourth BOOTSTRAP PROFESSIONALS
+.section-fourth {
+  .div-left {
+    background: $color-grey-light;
+    overflow: hidden;
+    img {
+      margin-left: 20%;
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+}
+///////section-fifth I GOT 99 PROBLEMS
+.section-fifth {
+  height: 60vh;
+  background: url("../img/plants-bg.jpg") no-repeat center center;
+  background-size: cover;
+  color: white;
+
+  h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+  }
+  p {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    background-color: $color-green-light;
+    border-radius: 50%;
+  }
+  .btn {
+    display: inline-block;
+    color: white;
+    margin: 10px;
+    padding: 20px 40px;
+    border-radius: 0;
+    border: solid 1px #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.5s;
+  }
+  .btn:hover {
+    color: $color-green-light;
+    border-color: $color-green-light;
+  }
+}
+///////section-sixth WE'RE A TEAM THAT ADORE WHAT WE DO
+.section-sixth {
+  min-height: 80vh;
+  h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: $color-green-light;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 10px;
+    white-space: nowrap;
+  }
+  .img-team-sixth {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+  .social-networks {
+    font-size: 1.2em;
+    a {
+      background: $color-grey-dark;
+      color: white;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 40px;
+      margin: 2%;
+      transition: all 0.2s;
+    }
+    a:hover {
+      background-color: $color-green-light;
+    }
+  }
+}
+///////section-seventh SUSCRIBE TO STAY IN THE LOOP
+.section-seventh {
+  background: url("../img/keyboard-bg.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  height: 50vh;
+  i {
+    font-size: 1.4em;
+  }
+  button {
+    text-transform: uppercase;
+    background: rgba(61, 201, 179, 0.5);
+    border-radius: 0;
+    border: solid 1px rgba(61, 201, 179, 0);
+    // padding: 20px;
+    margin: 0 1%;
+    color: white;
+    text-transform: uppercase;
+    transition: all 0.5s;
+  }
+  button:hover {
+    background: rgba(61, 201, 179, 0.3);
+    color: white;
+    border: solid 1px rgba(61, 201, 179, 0.5);
+  }
+  input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 0;
+    border: 1px ridge white;
+  }
+  ::placeholder {
+    color: white;
+    opacity: 1;
+  }
+  .chevron {
+    color: white;
+    background-color: $color-green-light;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -2vh;
+    z-index: 10;
+    font-size: 18px;
+    line-height: 46px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+}
+
+///////section-eighth DROP US A LINE
+.section-eighth {
+  background: $color-grey-light;
+  padding-bottom: 1em;
+  min-height: 30vh;
+
+  h3 {
+    color: $color-green-light;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  h3:after {
+    content: " ";
+    border: solid 2px $color-green-light;
+    text-align: center;
+    margin: auto;
+    display: block;
+    width: 35px;
+    margin: 25px auto;
+  }
+  img {
+    padding-bottom: 4em;
+  }
+  .social-networks {
+    font-size: 1.2em;
+    padding: 2em;
+    a {
+      background: $color-grey-dark;
+      color: white;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      border-radius: 50%;
+      display: inline-block;
+      line-height: 40px;
+      margin: 2%;
+      transition: all 0.2s;
+    }
+    a:hover {
+      background-color: $color-green-light;
+    }
+  }
+  .card {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+footer {
+  background-color: #242830;
+  p {
+    color: white;
+    margin: 2%;
+  }
+  a,
+  a:hover {
+    color: #a1a9b0;
+  }
+}

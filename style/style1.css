@@ -27,12 +27,15 @@ section {
   min-height: 40vh;
 }
 
+/* section-first
+*********************************/
 .section-first {
   position: relative;
   height: 100vh;
   background: url("../img/hero-bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
 }
 
 .section-first .container {
@@ -41,10 +44,13 @@ section {
 
 .section-first i {
   font-size: 2em;
+  color: black;
+}
+
+.section-first .bar-nav {
   position: absolute;
   top: 10%;
   right: 20%;
-  color: black;
 }
 
 .section-first h1 {
@@ -58,7 +64,7 @@ section {
   color: #8c9398;
 }
 
-.section-first .btn {
+.section-first .btn-custo {
   background: #3dc9b3;
   padding: 20px 40px;
   margin: 60px 0 0;
@@ -73,12 +79,69 @@ section {
   transition: all 0.5s;
 }
 
-.section-first .btn:hover,
-.section-first .btn:focus {
+.section-first .btn-custo:hover,
+.section-first .btn-custo:focus {
   background: #3dc9b3;
   opacity: 0.9;
 }
 
+.section-first .animate {
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0rem);
+            transform: translateY(0rem);
+    opacity: 1;
+  }
+  0% {
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
+    opacity: 0;
+  }
+}
+
+.section-first .slideIn {
+  -webkit-animation-name: slideIn;
+          animation-name: slideIn;
+}
+
+@media only screen and (max-width: 400px) {
+  .section-first h1 {
+    font-size: 2em;
+  }
+}
+
+/*********************************
+section-second
+*********************************/
 .section-second {
   background: #f3f5f8;
   height: 50vh;
@@ -94,6 +157,9 @@ section {
   }
 }
 
+/*********************************
+ section-third LOVE WHAT YOU DO, AND YOU'LL DO IT WELL
+*********************************/
 .section-third h3 {
   font-size: 1.2em;
   margin: 0.8em 0;
@@ -111,6 +177,9 @@ section {
   border-radius: 50%;
 }
 
+/*********************************
+section-fourth BOOTSTRAP PROFESSIONALS
+*********************************/
 .section-fourth .div-left {
   background: #f3f5f8;
   overflow: hidden;
@@ -124,6 +193,9 @@ section {
      object-fit: contain;
 }
 
+/*********************************
+section-fifth I GOT 99 PROBLEMS
+*********************************/
 .section-fifth {
   height: 60vh;
   background: url("../img/plants-bg.jpg") no-repeat center center;
@@ -167,6 +239,9 @@ section {
   border-color: #3dc9b3;
 }
 
+/*********************************
+section-sixth WE'RE A TEAM THAT ADORE WHAT WE DO
+*********************************/
 .section-sixth {
   min-height: 80vh;
 }
@@ -209,6 +284,9 @@ section {
   background-color: #3dc9b3;
 }
 
+/*********************************
+section-seventh SUSCRIBE TO STAY IN THE LOOP
+*********************************/
 .section-seventh {
   background: url("../img/keyboard-bg.jpg") no-repeat center center;
   background-size: cover;
@@ -283,6 +361,9 @@ section {
   right: 0;
 }
 
+/*********************************
+section-eighth DROP US A LINE
+*********************************/
 .section-eighth {
   background: #f3f5f8;
   padding-bottom: 1em;

@@ -29,12 +29,38 @@
   <body>
     <section class="section-first">
       <div class="container d-flex flex-column justify-content-center">
-        <a href="#"><i class="fas fa-bars"></i></a>
+        <div class="row bar-nav">
+          <div class="dropdown ml-auto">
+            <button
+              class="btn"
+              type="button"
+              id="dropdownMenu2"
+              data-toggle="dropdown"
+            >
+              <i class="fas fa-bars"></i>
+            </button>
+            <div
+              class="dropdown-menu dropdown-menu-right animate slideIn"
+              aria-labelledby="dropdownMenu2"
+            >
+              <button class="dropdown-item" type="button">
+                <h2>Action</h2>
+              </button>
+              <button class="dropdown-item" type="button">
+                <h2>Another action</h2>
+              </button>
+              <button class="dropdown-item" type="button">
+                <h2>Something else here</h2>
+              </button>
+            </div>
+          </div>
+        </div>
+
         <div class="row align-items-center">
           <div class="col-md-12 text-center">
-            <h1>SE<span>MEUBLER</span></h1>
+            <h1 class="d-flex">SE<span>MEUBLER</span></h1>
             <p>Louer c'est <em>pratique</em> et <em>économique</em></p>
-            <a href="#" class="btn btn-lg">Location de meubles</a>
+            <a href="#" class="btn btn-lg btn-custo">Location de meubles</a>
           </div>
         </div>
       </div>
@@ -222,15 +248,15 @@
           <div class="col-md-8 col-xs-12 align-self-center">
             <i class="fas fa-paper-plane mb-3"></i>
             <h2 class="mb-5">Suscribe to stay in the loop</h2>
-            <div class="col-md-6 col-xs-8 mx-auto">
-              <form class="d-flex">
+            <div class="mx-auto">
+              <form class="row justify-content-center">
                 <input
                   type="email"
-                  class="form-control"
+                  class="form-control col-md-6 mt-2"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
-                <button type="submit" class="btn">Submit</button>
+                <button type="submit" class="btn col-md-4 mt-2">Submit</button>
               </form>
             </div>
           </div>
@@ -274,10 +300,8 @@
     </section>
 
     <footer class="d-flex justify-content-between px-5">
-      <p><a href="#">Terms & Conditions | Legals</a></p>
-      <p>
-        A free website template create exclusivly for <a href="#">Codrops</a>
-      </p>
+      <p><a href="#">Terms & Conditions</a> | <a href="#">Legals</a></p>
+      <p>A website template create for <a href="#">Se Meubler</a></p>
     </footer>
 
     <!-- Latest compiled and minified JavaScript -->

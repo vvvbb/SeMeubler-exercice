@@ -29,22 +29,27 @@ section {
   min-height: 40vh;
 }
 
-////////////////   section-first
+/* section-first
+*********************************/
 .section-first {
   position: relative;
   height: 100vh;
   background: url("../img/hero-bg.jpg") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
+  overflow: hidden;
   .container {
     height: 100%;
   }
   i {
     font-size: 2em;
+
+    color: black;
+  }
+  .bar-nav {
     position: absolute;
     top: 10%;
     right: 20%;
-    color: black;
   }
   h1 {
     font-size: 3em;
@@ -55,7 +60,7 @@ section {
       color: $color-grey-text;
     }
   }
-  .btn {
+  .btn-custo {
     // background: rgba(61, 201, 179, 1);
     background: $color-green-light;
     padding: 20px 40px;
@@ -68,14 +73,46 @@ section {
     font-weight: bold;
     transition: all 0.5s;
   }
-  .btn:hover,
-  .btn:focus {
+  .btn-custo:hover,
+  .btn-custo:focus {
     background: $color-green-light;
     opacity: 0.9;
   }
+
+  .animate {
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+  }
+  @keyframes slideIn {
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0rem);
+      opacity: 1;
+    }
+    0% {
+      transform: translateY(1rem);
+      opacity: 0;
+    }
+  }
+  .slideIn {
+    animation-name: slideIn;
+  }
 }
 
-///////section-second
+@media only screen and (max-width: 400px) {
+  .section-first {
+    h1 {
+      font-size: 2em;
+    }
+  }
+}
+
+/*********************************
+section-second
+*********************************/
 .section-second {
   background: $color-grey-light;
   height: 50vh;
@@ -89,7 +126,10 @@ section {
   }
 }
 
-///////section-third LOVE WHAT YOU DO, AND YOU'LL DO IT WELL
+/*********************************
+ section-third LOVE WHAT YOU DO, AND YOU'LL DO IT WELL
+*********************************/
+
 .section-third {
   h3 {
     font-size: 1.2em;
@@ -109,7 +149,9 @@ section {
     // filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(330deg) brightness(106%) contrast(101%);
   }
 }
-///////section-fourth BOOTSTRAP PROFESSIONALS
+/*********************************
+section-fourth BOOTSTRAP PROFESSIONALS
+*********************************/
 .section-fourth {
   .div-left {
     background: $color-grey-light;
@@ -122,7 +164,9 @@ section {
     }
   }
 }
-///////section-fifth I GOT 99 PROBLEMS
+/*********************************
+section-fifth I GOT 99 PROBLEMS
+*********************************/
 .section-fifth {
   height: 60vh;
   background: url("../img/plants-bg.jpg") no-repeat center center;
@@ -161,7 +205,9 @@ section {
     border-color: $color-green-light;
   }
 }
-///////section-sixth WE'RE A TEAM THAT ADORE WHAT WE DO
+/*********************************
+section-sixth WE'RE A TEAM THAT ADORE WHAT WE DO
+*********************************/
 .section-sixth {
   min-height: 80vh;
   h3 {
@@ -196,7 +242,9 @@ section {
     }
   }
 }
-///////section-seventh SUSCRIBE TO STAY IN THE LOOP
+/*********************************
+section-seventh SUSCRIBE TO STAY IN THE LOOP
+*********************************/
 .section-seventh {
   background: url("../img/keyboard-bg.jpg") no-repeat center center;
   background-size: cover;
@@ -249,8 +297,9 @@ section {
     right: 0;
   }
 }
-
-///////section-eighth DROP US A LINE
+/*********************************
+section-eighth DROP US A LINE
+*********************************/
 .section-eighth {
   background: $color-grey-light;
   padding-bottom: 1em;

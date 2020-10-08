@@ -14,10 +14,15 @@
     />
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css" />
+
     <link
       rel="stylesheet"
       href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/sketchy/bootstrap.css"
+    /> -->
     <link
       rel="stylesheet"
       href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css"
@@ -40,7 +45,7 @@
               <i class="fas fa-bars"></i>
             </button>
             <div
-              class="dropdown-menu dropdown-menu-right animate slideIn"
+              class="dropdown-menu dropdown-menu-right"
               aria-labelledby="dropdownMenu2"
             >
               <button class="dropdown-item" type="button">
@@ -58,9 +63,11 @@
 
         <div class="row align-items-center">
           <div class="col-md-12 text-center">
-            <h1 class="d-flex">SE<span>MEUBLER</span></h1>
+            <h1>SE<span>MEUBLER</span></h1>
             <p>Louer c'est <em>pratique</em> et <em>économique</em></p>
-            <a href="#" class="btn btn-lg btn-custo">Location de meubles</a>
+            <a href="#" class="btn btn-lg btn-custo text-uppercase"
+              >Location de meubles</a
+            >
           </div>
         </div>
       </div>
@@ -173,7 +180,7 @@
             <h2 class="my-3">I got 99 problems</h2>
             <h3>But <em>design</em> 'aint one</h3>
             <p class="my-5">⌄</p>
-            <button class="btn m-5">Ignite your passion</button>
+            <button class="btn m-5 text-uppercase">Ignite your passion</button>
           </div>
         </div>
       </div>
@@ -248,7 +255,7 @@
           <div class="col-md-8 col-xs-12 align-self-center">
             <i class="fas fa-paper-plane mb-3"></i>
             <h2 class="mb-5">Suscribe to stay in the loop</h2>
-            <div class="mx-auto">
+            <div class="mx-auto col-lg-6 col-md-12 col-sm-8">
               <form class="row justify-content-center">
                 <input
                   type="email"
@@ -256,9 +263,22 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
-                <button type="submit" class="btn col-md-4 mt-2">Submit</button>
+                <button type="submit" class="btn col-md-4 mt-2 text-uppercase">
+                  Submit
+                </button>
               </form>
             </div>
+            <!-- <div class="col-md-6 col-xs-8 mx-auto">
+              <form class="d-flex">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <button type="submit" class="btn">Submit</button>
+              </form>
+            </div> -->
           </div>
         </div>
         <p class="chevron">Λ</p>
@@ -275,17 +295,17 @@
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-3 m-3 py-5 card text-center">
+          <div class="col-md-3 m-3 py-5 shadow text-center">
             <i class="fas fa-map-marker-alt mb-4"></i>
             <h3 class="">Address</h3>
             <p>Level 6, 23 Pitt St, Sydney</p>
           </div>
-          <div class="col-md-3 m-3 py-5 card text-center">
+          <div class="col-md-3 m-3 py-5 shadow text-center">
             <i class="fas fa-mobile-alt mb-4"></i>
             <h3 class="">Phone</h3>
             <p>+61 9 211 3747</p>
           </div>
-          <div class="col-md-3 m-3 py-5 card text-center">
+          <div class="col-md-3 m-3 py-5 shadow text-center">
             <i class="fas fa-paper-plane mb-4"></i>
             <h3 class="">Email</h3>
             <p>hey@halcyondays.com</p>
